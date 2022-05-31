@@ -67,7 +67,7 @@ if __name__ == '__main__':
     files = os.listdir(IMAGES_PATH)
     f = open(CLASS_PATH,"r")
     classes = f.readlines()
-
+    # use f.read().splitlines() 可避免以下每行會出現換行符號情況
     for i, c in enumerate(classes):
         if c.find("\n") != -1:
             classes[i] = c[:c.find("\n")]
