@@ -15,3 +15,8 @@
 - show_yolov4_result.py
 > 將所有驗證圖片、show_yolov4_result.py、result.txt放置同一資料夾
 > 所有label後的圖片會在pred資料夾
+- seperate_train_val_data.py
+> 先將所有資料放入名為train的資料夾後，讓所有資料依照8:1:1分為train, val ,test set
+> python seperate_train_val_data.py
+- structure_gen_csv.py
+> 產生csv格式
